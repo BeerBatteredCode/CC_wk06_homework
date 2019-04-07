@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Adoption List Matrix</title>
+    <link rel="stylesheet" link="text/css" media="screen" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="topper">Adoption Matrix</h1>
+        <!-- <img src="css/updated_logo.png"> -->
+
+        <div id="form-styling">
+          <form id="new-form-input">
+
+              <div class="form-item">
+                <input type="text" id="firstName" placeholder="Your first name?" required/>
+              </div>
+
+              <div class="form-item">
+                <input type="text" id="secondName" placeholder="Your last name?" required/>
+              </div>
+
+              <div class="form-item">
+                <select id="dropDown" required/>
+                  <option disabled selected>Level of care offered?</option>
+                  <option value="Foster">Foster</option>
+                  <option value="Trial Adoption">Trial Adoption</option>
+                  <option value="Full Adoption">Full Adoption</option>
+                </select>
+              </div>
+
+              <div class="form-item">
+                <input type="text" id="dogsName" placeholder="Your pups name?" required/>
+              </div>
+
+                <button class="button" id="delete-all">Delete all</button>
+                <button class="button" type="submit">Save</button>
+
+            </form>
+
+          </div>
+            <!-- <h2 class="list-title">Dogs Adopted</h2> -->
+          <div id="adoption-list"></div>
+        </div>
+
+  </body>
+</html>
